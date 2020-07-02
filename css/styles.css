@@ -1,0 +1,337 @@
+@import url(//db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat);
+@import url(//db.onlinewebfonts.com/c/d3085f686df272f9e1a267cc69b2d24f?family=Montserrat);
+@import url(//db.onlinewebfonts.com/c/7e389c5e310dc537b083e0e25ea6eab5?family=Druk+Wide+Medium);
+@import url(//db.onlinewebfonts.com/c/a86f94a776190a79c038dad18ec39950?family=Druk+Web+Bold);
+
+
+@font-face {
+    font-family: "Druk Wide Medium"; 
+    src: url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.eot"); 
+    src: url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.eot?#iefix") 
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.woff2") 
+    format("woff2"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.svg#Druk Wide Medium") format("svg"); 
+}
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.eot"); 
+    src: url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.eot?#iefix") 
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.woff2") 
+    format("woff2"), url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.svg#Montserrat") format("svg"); 
+    font-style: normal;
+    font-weight: normal;
+} 
+    @font-face {
+        font-family: "Montserrat"; 
+        src: url("//db.onlinewebfonts.com/t/d3085f686df272f9e1a267cc69b2d24f.eot"); 
+        src: url("//db.onlinewebfonts.com/t/d3085f686df272f9e1a267cc69b2d24f.eot?#iefix") 
+        format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d3085f686df272f9e1a267cc69b2d24f.woff2") 
+        format("woff2"), url("//db.onlinewebfonts.com/t/d3085f686df272f9e1a267cc69b2d24f.woff") format("woff"), 
+        url("//db.onlinewebfonts.com/t/d3085f686df272f9e1a267cc69b2d24f.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/d3085f686df272f9e1a267cc69b2d24f.svg#Montserrat") format("svg"); 
+        font-style:normal;
+        font-weight: bold;
+    } 
+    @font-face {
+        font-family: "Montserrat"; 
+        src: url("//db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.eot"); 
+        src: url("//db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.eot?#iefix") 
+        format("embedded-opentype"), 
+        url("//db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.woff2") 
+        format("woff2"), url("//db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.woff") 
+        format("woff"), url("//db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.ttf") 
+        format("truetype"), 
+        url("//db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.svg#Montserrat Light") 
+        format("svg"); 
+        font-style:normal;
+        font-weight: 200;
+    } 
+body {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-style: normal;
+	/*font-size: 18px;*/
+    height: 100%;
+    width:100%;
+}
+
+main{
+    background: url(/img/background.png);
+    background-size: cover;
+    background-color: rgba(255, 70, 86, 1);
+    width:100%;
+    height:100vh;
+    font-family: 'Druk Wide Medium';
+}
+
+header{
+    background-color: #1F2326;
+    font-weight:bold;
+    width:100%;
+    display:flex;
+}
+
+nav {
+    text-transform: uppercase;
+    padding-bottom:20px;
+    padding-top:20px;
+    display: flex;
+    align-items: center;
+}
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size:14px;
+    width:120px;
+    text-align: center;
+}
+
+header .logo {
+    padding-bottom:20px;
+    padding-top:20px;
+    display: flex;
+    align-items: center;
+    padding-right:45px;
+}
+
+.mainlogo {
+    height:30px;
+    
+}
+
+.logoseparate {
+    border-left: #FFFFFF 2px solid;
+    margin-left:20px;
+    margin-right:20px;
+    height:42px;
+    display: inline-block;
+}
+
+.riotlogo {
+    padding-left: 30px;
+}
+
+.usericon {
+    width:30px;
+    height:30px;
+    border-radius: 40px;
+    margin-right:10px;
+}
+
+.topmenu{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin-right:50px;
+    align-items: center;
+}
+
+.login{
+    display:flex;
+    align-items: center;
+}
+
+.login a {
+    text-decoration: none;
+    color:#fff;
+
+}
+
+footer{
+    height:150px;
+}
+
+.agents{
+    padding-top:90px;
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:50px;
+}
+
+main .title {
+    position: relative;;
+    width:20%;
+    font-size:115px;
+    color:transparent;
+    -webkit-text-stroke: 2px #fff;
+    font-weight: 500;
+    transform: rotate(90deg);
+}
+
+main .title span {
+    position: absolute;
+    top:-90px;
+    left:280px;
+}
+
+.agent-art {
+    background-color: #1F2326;
+    width:inherit;
+}
+
+.agent-art img {
+    width:inherit;
+}
+
+.agent {
+    position:relative;
+    width:300px;
+    display:flex;
+    justify-content:right;
+    border: 2px solid #1F2326;
+    justify-self: center;
+    height:682.2px;
+    margin-bottom:25px;
+    margin-left:20px;
+}
+
+.owl-carousel{
+    z-index: 10;
+}
+
+#active-agent .agent-art {
+    background-color: #fff;
+}
+
+.agent .info {
+    position: absolute;
+    width:150px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    top:60px;
+    left:-65px;
+}
+
+.agent .info .name {
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-text-stroke: 1.5px #fff;
+    font-size:50px;
+    line-height: 50px;
+    font-stretch: wider;
+}
+
+
+.agent .info .country {
+    color:#FF4656;
+    font-size: 12px;
+    width:200px;
+    letter-spacing: 0.1em;
+}
+
+#active-agent .info .name {
+    -webkit-text-stroke: 1.5px #1F2326;
+}
+
+.agent .skills-preview {
+    position: absolute;
+    background-color: #1F2326;
+    border: 2px solid #F8F8F8;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:300px;
+    bottom:-20px;
+    left:12px;
+}
+
+.agent .skills-preview .skill-icon svg {
+    width:40px;
+    height:40px;
+    color:#1F2326;
+}
+
+.agent .skills-preview .skill-icon svg path {
+    fill:#fff;
+}
+
+
+.agent .skills-preview .skill-icon {
+    padding-top:20px;
+    padding-bottom:20px;
+    
+}
+
+#active-agent .skills-preview {
+    border-color: #1F2326;
+    background-color: #fff;
+}
+
+#active-agent .skills-preview .skill-icon svg path {
+    fill:#1F2326;
+}
+
+.skills {
+    display:flex;
+    justify-content: space-around;
+}
+
+.skill-item {
+    border: 2px solid #000;
+    background-color: #f8f8f8;
+    margin-left:20px;
+    padding-left:40px;
+    padding-top:20px;
+    padding-right:180px;
+    position: relative;
+}
+
+.skill-item .relevance {
+    color:#c4c4c4;
+    font-size:24px;
+    text-transform: uppercase;
+}
+
+.skill-item .name{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.skill-item .description {
+    font-family: 'Montserrat';
+    font-size:16px;
+    width:270px;
+    margin-bottom:15px;
+    font-weight:200;
+}
+
+.skill-item .square {
+    position:absolute;
+    background-color: #FF4656;
+    width:120px;
+    height:120px;
+    bottom:0px;
+    right:56px;
+}
+
+.skill-item .icon {
+    position: absolute;
+    top:14px;
+    right:36px;
+    z-index: 1;
+}
+
+.skill-item .icon svg {
+    width:110px;
+    height:110px;
+}
+.next {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:170px;
+    padding:initial;
+
+}
+
+.carousel-wrapper {
+    width:80%;
+}
