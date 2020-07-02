@@ -41,3 +41,10 @@ $(function() {
     }, 'xml');
   });
 
+  $('.agent').click(function(){
+    var active = document.getElementById('active-agent')
+    var count = $('.agent').index(active);
+    $('.agent').eq(count).removeAttr('id');
+    $(this).attr('id','active-agent');
+  });
+

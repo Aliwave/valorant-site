@@ -66,6 +66,13 @@ main{
     height:100vh;
     font-family: 'Druk Wide Medium';
 }
+.wrapper {
+    background:url(/img/elements.png);
+    background-size: 1730px 750px;
+    background-repeat: no-repeat;
+    background-position-x: 70px;
+    background-position-y: 60px;
+}
 
 header{
     background-color: #1F2326;
@@ -171,10 +178,22 @@ main .title span {
 .agent-art {
     background-color: #1F2326;
     width:inherit;
+    background: linear-gradient(135deg, transparent 4.5px,#1F2326 0);
+}
+
+#active-agent .agent-art {
+    background-color: #fff;
+    background: linear-gradient(135deg, transparent 4.5px, #fff 0);
 }
 
 .agent-art img {
     width:inherit;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 .agent {
@@ -182,19 +201,52 @@ main .title span {
     width:300px;
     display:flex;
     justify-content:right;
-    border: 2px solid #1F2326;
+    
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, transparent 6px,#1F2326 0);
+    border-image-slice: 1; 
     justify-self: center;
     height:682.2px;
     margin-bottom:25px;
     margin-left:20px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /*border-top-left-radius: 16px;*/
 }
+
+.agent::before {
+    content: '';
+    position:absolute;
+    border: 1px solid #1F2326;
+    top:-3.5px;
+    left:2.5px;
+    height:11.5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.agent:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.agent:hover img {
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
 
 .owl-carousel{
     z-index: 10;
-}
-
-#active-agent .agent-art {
-    background-color: #fff;
 }
 
 .agent .info {
@@ -207,6 +259,7 @@ main .title span {
     -ms-transform: rotate(90deg);
     top:60px;
     left:-65px;
+    z-index: 1;
 }
 
 .agent .info .name {
@@ -228,6 +281,12 @@ main .title span {
 
 #active-agent .info .name {
     -webkit-text-stroke: 1.5px #1F2326;
+}
+
+#active-agent img {
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
 }
 
 .agent .skills-preview {
@@ -273,14 +332,32 @@ main .title span {
     justify-content: space-around;
 }
 
-.skill-item {
-    border: 2px solid #000;
-    background-color: #f8f8f8;
+
+.skill-item {    
+    background: linear-gradient(135deg, transparent 4.5px, #f8f8f8 0);
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, transparent 6.5px,#1F2326 0);
+    border-image-slice: 1;
+    border-top-left-radius: 16px;
     margin-left:20px;
     padding-left:40px;
     padding-top:20px;
     padding-right:180px;
     position: relative;
+}
+
+.skill-item::before {
+    content: '';
+    position:absolute;
+    border: 1px solid #1F2326;
+    top:-3px;
+    left:3px;
+    height:11.5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
 }
 
 .skill-item .relevance {
@@ -334,4 +411,9 @@ main .title span {
 
 .carousel-wrapper {
     width:80%;
+}
+
+.dropimg{
+    margin-left:5px;
+    padding-bottom:1px;
 }
