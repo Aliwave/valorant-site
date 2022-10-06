@@ -1,0 +1,28 @@
+{
+  "geoobjects":[
+    {
+      "name": "Test1",
+      "lat":"56.0123",
+      "lon":"51.011",
+      "description":"Something",
+      "audiolink":"test223311.ru/audio1",
+      "imglink":"test223311.ru/img1"
+    },
+    {
+      "name": "Test2",
+      "lat":"95.0123",
+      "lon":"61.011",
+      "description":"Something11",
+      "audiolink":"test223311.ru/audio2",
+      "imglink":"test223311.ru/img2"
+    },
+    {
+      "name": "Test3",
+      "lat":"45.0123",
+      "lon":"32.011",
+      "description":"Something121",
+      "audiolink":"test223311.ru/audio3",
+      "imglink":"test223311.ru/img3"
+    }
+  ]
+}
